@@ -1,0 +1,143 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+body {
+    height: 100%;
+    width: 100%;
+    background: url('../img/background_1.jpg') repeat repeat;
+    color: #ffffff;
+
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    font-family: Nunito;
+}
+
+h1.main-heading {
+    font-size: 4.5em;
+    margin-bottom: .1em;
+    text-shadow: 0 0 5px rgba(38, 38, 38, 0.56);
+}
+
+p.shadow {
+    text-shadow: 0 0 5px rgba(38, 38, 38, 0.56);
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    min-width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #51ADED;
+}
+
+.fileUpload {
+    /*
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      @include scallop($formBgColor);
+    }
+    &:after {
+      top: auto;
+      bottom: -20px;
+      background-position: 0 -15px;
+    }*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    background-color: #EEF2F6;
+    width: 100%;
+    padding: 30px;
+    color: #888;
+    margin-bottom: 5px;
+}
+.fileUpload h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 20px 0 5px 0;
+    padding: 0;
+}
+.fileUpload progress {
+    appearance: none;
+    border: 0;
+    width: 100%;
+    height: 15px;
+    color: #51ADED;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.fileUpload progress::-moz-progress-bar {
+    background-color: #51ADED;
+    border-radius: 10px;
+}
+.fileUpload progress::-webkit-progress-bar {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+.fileUpload progress::-webkit-progress-value {
+    position: relative;
+    background-color: #51ADED;
+    border-radius: 10px;
+}
+.fileUpload p {
+    font-size: 80%;
+    text-align: left;
+}
+
+
+.form-group.small-margin {
+    margin-bottom: 5px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+input {
+    border-radius: 0 !important;
+    font-weight: lighter !important;
+    white-space: nowrap !important;
+    font-size: inherit !important;
+    margin-bottom: 5px;
+    border-color: #AAA !important;
+}
+
+input:focus,
+input:active {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #0275EA !important;
+}
+
+hr {
+    border-color: #d0d0d0;
+}
+
+
+.fileInput {
+    height: 46px;
+    width: 100%;
+    position: absolute;
+    margin-top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.fileInput:hover {
+    cursor: pointer;
+}

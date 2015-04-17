@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', ['as' => 'index', 'uses' => 'LicenseController@index']);
+
+Route::post('/process', ['as' => 'process', 'uses' => 'LicenseController@process']);
