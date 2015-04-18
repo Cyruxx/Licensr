@@ -13,4 +13,5 @@
 
 Route::get('/', ['as' => 'index', 'uses' => 'LicenseController@index']);
 
+Route::get('/{hash}', ['as' => 'download', 'uses' => 'LicenseController@download']);
 Route::post('/process', ['as' => 'process', 'uses' => 'LicenseController@process']);
